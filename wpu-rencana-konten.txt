@@ -1,6 +1,8 @@
 Rencana konten WPU
 
 - video mengenai JS
+  * ES6
+  * Framework JAVASCRIPT
 - php framework
 - interview
 - vlog
