@@ -1,0 +1,205 @@
+1  git
+2  clear
+3  ls
+4  git --version
+5  pwd
+6  cd C:\Users\Steven Tjoa\Documents\Github\wpu-test-repo
+7  pwd
+8  cd Documents/Github/wpu-test-repo/
+9  ls
+10  git init
+11  ls
+12  git status
+13  git add index.html
+14  git status
+15  git commit -m "menambahkan file index.html"
+16  git status
+17  git status
+18  git add .
+19  git status
+20  git commit -m "mengubah file index dan menambahkan file style.css"
+21  git status
+22  git status
+23  git add .
+24  git commit -m "melakukan perubahan"
+25  git status
+26  git log
+27  git log -3
+28  git log style.css
+29  git log --file style.css
+30  git log -- style.css
+31  git checkout 11158 -- style.css
+32  git status
+33  git commit -m "mengembalikan style.css"
+34  git status
+35  cd ..
+36  cd wpu-test-repo-2/
+37  git init
+38  git status
+39  git add .
+40  git commit -m "tambah file mahasiswa.html"
+41  git status
+42  git commit -am "tambah data 1 mahasiswa"
+43  git status
+44  git branch
+45  git branch dosen
+46  git branch staff
+47  git branch
+48  git log
+49  git log -all --decorate --oneline --graph
+50  git log --all --decorate --oneline --graph
+51  alias graph="git log --all --decorate --oneline --graph"
+52  graph
+53  git status
+54  git checkout dosen
+55  git status
+56  git branch
+57  git status
+58  git add .
+59  git commit -m "menambahkan file dosen"
+60  git checkout master
+61  git checkout dosen
+62  git status
+63  graph
+64  git branch
+65  git checkout staff
+66  git status
+67  git add .
+68  git commit -m "menambhakn fitur staff.html"
+69  graph
+70  git checkout master
+71  graph
+72  graph
+73  git checkout master
+74  git branch
+75  git branch
+76  git merge dosen
+77  git branch
+78  git branch --merged
+79  git branch -d dosen
+80  git branch
+81  graph
+82  git branch -d staff
+83  graph
+84  graph
+85  git status
+86  git branch
+87  git merge staff
+88  clear
+89  graph
+90  git branch --merged
+91  git branch -d staff
+92  git branch
+93  git branch
+94  clear
+95  history
+96  git branch dev
+97  git branch
+98  git checkout dev
+99  git branch
+100  git status
+101  git commit -am "mengubah file mahasiswa.html"
+102  git status
+103  graph
+104  history
+105  graph
+106  git checkout master
+107  graph
+108  git status
+109  git commit -am "mengubah isi dari file mahasiswa.html"
+110  graph
+111  git branch
+112  git merge dev
+113  git status
+114  git add .
+115  git commit -m "merge branch dev"
+116  graph
+117  git branch --merged
+118  git branch -d dev
+119  git branch
+120  git log
+121  git checkout 0b27e29
+122  graph
+123  git checkout master
+124  git checkout 0b27e29
+125  graph
+126  git branch test
+127  git branch
+128  graph
+129  git checkout test
+130  graph
+131  history
+
+-- Git Remote Command
+--- Initial from Github
+1  git clone https://github.com/steventjoa89/wpu-git-test.git
+2  ls
+3  cd wpu-git-test/
+4  clear
+5  git remote
+6  git remote -v
+7  git status
+8  graph
+9  alias graph="git log --all --decorate --oneline --graph"
+10  graph
+11  git status
+12  git add .
+13  git commit -m "menambahkan file index.html"
+14  git status
+15  graph
+16  git push
+17  git status
+18  graph
+19  git config --list
+20  git status
+21  git commit -am "nambah lorem"
+22  git push
+23  git status
+24  graph
+25  history
+
+-- Git Remote Command
+--- Initial from Local
+27  mkdir wpu-git-test-2
+28  cd wpu-git-test-2/
+29  git init
+30  git status
+31  git add .
+32  git commit -m "tambah file index.php"
+33  git commit -am "tambah paragraph"
+34  git status
+35  git remote
+36  git remote add origin https://github.com/steventjoa89/wpu-git-test-2.git
+37  git remote
+38  git remote -v
+39  git branch -M main
+40  git branch
+41  git push -u origin main
+42  git status
+43  git commit -am "tambah list"
+44  graph
+45  git push
+46  history
+
+
+-- Git Remote Command
+--- Di local berubah, di remote juga berubah
+47  git status
+48  git add .
+49  git commit -m "tambah style.css"
+50  git push
+51  git status
+52  git fetch
+53  git status
+54  graph
+55  git pull
+56  git status
+57  git add .
+58  git commit -m "mengubah isi file style.css"
+59  git status
+60  git push
+61  git config credential.helper store
+62  git push
+63  git push
+64  graph
+65  history
